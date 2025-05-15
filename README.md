@@ -1,9 +1,10 @@
-# HabitoMania
+# CotiDolar
 # 📋 Seguimiento de Hábitos
 
-**HabitoMania** es una página web desarrollada como parte del trabajo práctico integrador de la materia "Desarrollo de Aplicaciones para Dispotivios Moviles". Se aplicarán los conocimientos vistos en clase, comenzando con HTML y CSS, y luego sumando otras tecnologias. Permite gestionar y seguir hábitos o tareas diarias. Se actualizará semanalmente conforme avance la materia.
+**CotiDolar** Es una pagina web desarrollada como parte del trabajo practico integrador de la materia "Desarrollo de Aplicaciones para Dispositivos Moviles". Se aplicara los conocimmitos vitos en clase, comenzando con HTML, CSS y Javascript.
+Se actualizara semanalmente conforme avance la materia.
 
-La página permite al usuario llevar un control visual de sus hábitos diarios, marcarlos como completados y fomentar la constancia en sus rutinas.
+Es una pagina que da seguimiento de cotizaciones de dolr en Argentina (oficial y blue) en tiempo real.
 
 ---
 
@@ -16,11 +17,19 @@ La página permite al usuario llevar un control visual de sus hábitos diarios, 
 
 ---
 
+## 🌟 Características
+
+- ✅ Cotización actualizada del dólar oficial y blue
+- ✅ Valores de compra, venta y promedio
+- ✅ Consumo de API externa (Bluelytics)
+
+---
+
 ## 🛠️ Tecnologías utilizadas
 
 - HTML5
 - CSS3
-- JavaScript (próximamente)
+- JavaScript
 - Git & GitHub
 - Netlify (para despliegue)
 
