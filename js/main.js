@@ -92,16 +92,18 @@ fetch('https://newsdata.io/api/1/news?' +
     .then(response => response.json())
     .then(data => {
         console.log(data);
-        const contenedor = document.querySelector('#main-noticias');
+        const contenedor = document.querySelector('#noticias');
 
         for(const noticia of data.results){
             contenedor.innerHTML += `
-            <div class="noticia">
-                <h2>${noticia.title}</h2>
-                <p>${noticia.description || ""}</p>
-                <img src="${noticia.image_url}" alt="">
-                <a href="${noticia.source_url}" target="_blank">${noticia.source_name}</a>
-            </div>
+                <div class="card bg-light text-dark mb-3" style="width: 500px">
+                    <img src="${noticia.image_url}" class="card-img-top" alt="${noticia.title}">
+                    <div class="card-body">
+                         <h5 class="card-title">${noticia.title}</h5>
+                        <p class="card-text">${noticia.description || ""}</p>
+                         <a href="${noticia.source_url}" target="_blank" class="btn btn-outline-dark">${noticia.source_name}</a>
+                     </div>
+                </div>
             `
         }
         
