@@ -4,7 +4,7 @@ let navHTML = `
     <div class="header-content">
             <h1>CotiDolar</h1>
             <nav>
-                <a href="index.html" class="active">Inicio</a>
+                <a href="index.html">Inicio</a>
                 <a href="noticias.html">Noticias</a>
             </nav>
     </div>

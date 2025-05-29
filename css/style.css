@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
 :root {
-  --primary-color: #2563eb;     /* Azul moderno */
-  --text-dark: #1e293b;        /* Gris oscuro para texto */
-  --text-light: #64748b;       /* Gris medio */
-  --bg-light: #f8fafc;         /* Fondo muy claro */
-  --transition: all 0.3s ease; /* Transición suave */
+  --verde-billete: #1A4730;
+  --verde-claro: #A9CBB7;
+  --gris-billete: #BFBFBF;
+  --negro-suave: #333333;
+  --beige-papel: #F5F3EA;
+  --oro-opaco: #C1A875;
 }
+
 
 * {
   margin: 0;
@@ -18,16 +20,17 @@
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  color: var(--text-dark);
-  background-color: var(--bg-light);
+  background-image: url('../img/dolar-bk.jpg');
+  background-position: center;
+  background-size: cover;
   margin: 0;
   padding: 0;
 }
 
 header {
   padding: 20px;
-  background-color: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--verde-claro);
+  box-shadow: 0 2px 10px var(--verde-billete);
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -43,12 +46,13 @@ header {
   flex-wrap: wrap;
 }
 
-h1 {
-  font-size: 24px;
-  font-weight: 700;
+header h1 {
+  font-size: 32px;
+  font-weight: 900;
   margin: 0;
-  color: var(--text-dark);
+  color: var(--oro-opaco);
   letter-spacing: -0.02em;
+  text-shadow: 1px 1px 2px var(--verde-billete);
 }
 
 nav{
@@ -58,10 +62,10 @@ nav{
 }
 
 nav a {
-  color: var(--text-dark);
+  color: var(--negro-suave);
   text-decoration: none;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   padding: 8px 12px;
   border-radius: 6px;
   transition: var(--transition);
@@ -69,41 +73,21 @@ nav a {
 }
 
 nav a:hover{
-  color: var(--primary-color);
-}
-
-nav a.active{
-  color: var(--primary-color);
-  font-weight: 600;
-}
-
-nav a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--primary-color);
-  transition: var(--transition);
-}
-
-nav a:hover::after {
-  width: 100%;
+  color: var(--oro-opaco);
 }
 
 .cotizacion-container {
   max-width: 500px;
   margin: 0 auto;
-  background: white;
+  background: var(--beige-papel);
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cotizacion-container h2{
-  color: #2c3e50;
-  border-bottom: 2px solid #3498db;
+  color: var(--verde-billete);
+  border-bottom: 2px solid var(--verde-billete);
   padding-bottom: 10px;
   margin-top: 25px;
 }
@@ -113,12 +97,12 @@ nav a:hover::after {
   justify-content: space-between;
   margin-bottom: 10px;
   padding: 8px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--oro-opaco);
 }
 
 .cotizacion-label{
   font-weight: bold;
-  color: #34495e;
+  color: var(--negro-suave);
 }
 
 .cotizacion-value{
@@ -130,9 +114,9 @@ nav a:hover::after {
 }
 
 /* estilos para el footer */
-.site-footer{
-  background-color: var(--text-dark);
-  color: white;
+footer {
+  background-color: var(--negro-suave);
+  color: var(--beige-papel);
   padding: 30px 0 0;
   margin-top: 40px;
 }
@@ -153,13 +137,13 @@ nav a:hover::after {
 
 .footer-section h3,
 .footer-section h4 {
-  color: white;
+  color: var(--beige-papel);
   margin-bottom: 15px;
   font-size: 18px;
 }
 
 .footer-section p {
-  color: var(--bg-light);
+  color: var(--beige-papel);
   opacity: 0.8;
   line-height: 1.6;
 }
@@ -174,13 +158,13 @@ nav a:hover::after {
 }
 
 .footer-section a {
-  color: var(--bg-light);
+  color: var(--beige-papel);
   text-decoration: none;
   transition: var(--transition);
 }
 
 .footer-section a:hover {
-  color: var(--primary-color);
+  color: var(--oro-opaco);
   padding-left: 5px;
 }
 
@@ -191,7 +175,7 @@ nav a:hover::after {
 }
 
 .social-links a {
-  color: white;
+  color: var(--beige-papel);
   font-size: 20px;
 }
 
@@ -199,6 +183,6 @@ nav a:hover::after {
   text-align: center;
   padding: 20px;
   margin-top: 30px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--verde-billete);
   font-size: 14px;
 }
