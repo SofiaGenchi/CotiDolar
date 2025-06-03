@@ -1,0 +1,45 @@
+:root {
+  --verde-billete: #1A4730;
+  --verde-claro: #A9CBB7;
+  --gris-billete: #BFBFBF;
+  --negro-suave: #333333;
+  --beige-papel: #F5F3EA;
+  --oro-opaco: #C1A875;
+}
+
+.cotizacion-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: var(--beige-papel);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cotizacion-container h2{
+  color: var(--verde-billete);
+  border-bottom: 2px solid var(--verde-billete);
+  padding-bottom: 10px;
+  margin-top: 25px;
+}
+
+.cotizacion-row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--oro-opaco);
+}
+
+.cotizacion-label{
+  font-weight: bold;
+  color: var(--negro-suave);
+}
+
+.cotizacion-value{
+  color: #27ea60;
+}
+
+.cotizacion-value.blue {
+  color: #2980b9;
+}

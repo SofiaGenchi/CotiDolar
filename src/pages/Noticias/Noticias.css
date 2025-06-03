@@ -1,0 +1,17 @@
+:root {
+  --verde-billete: #1A4730;
+  --verde-claro: #A9CBB7;
+  --gris-billete: #BFBFBF;
+  --negro-suave: #333333;
+  --beige-papel: #F5F3EA;
+  --oro-opaco: #C1A875;
+}
+
+#main-noticias h2 {
+   color: var(--oro-opaco);
+  border-bottom: 2px solid var(--oro-opaco);
+  padding-bottom: 10px;
+  margin-top: 25px;
+  font-size: 34px;
+  font-weight: 800;
+}
