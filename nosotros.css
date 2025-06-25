@@ -1,3 +1,12 @@
+
+:root {
+  --verde-billete: #1A4730;
+  --verde-claro: #A9CBB7;
+  --gris-billete: #BFBFBF;
+  --negro-suave: #333333;
+  --beige-papel: #F5F3EA;
+  --oro-opaco: #C1A875;
+}
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +27,7 @@ body {
 header {
   width: 100%;
   height: 80px;
-  background: #2896b4;
+  background: #A9CBB7;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,36 +42,12 @@ header {
 .logo {
   font-size: 28px;
   font-weight: bold;
-  color: #005672;
+  color: #333333;
 }
 
 .hamburger {
   display: none;
 }
-
-.nav-bar ul {
-  display: flex;
-}
-
-.nav-bar ul li a {
-  display: block;
-  color: #005672;
-  padding: 10px 25px;
-  border-radius: 50px;
-  transition: 0.2s;
-  margin: 0 5px;
-}
-
-.nav-bar ul li a:hover {
-  color: #005672;
-  background-color: #F2B035;
-}
-
-.nav-bar ul li a.active {
-  color: #005672;
-  background: #a7edf2;
-}
-
 
 .mainNosotros {
   display: flex;
@@ -72,7 +57,7 @@ header {
 }
 
 .mainNosotros section {
-  background-color: #cadaca60;
+  background-color: #A9CBB7;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -84,12 +69,12 @@ header {
   margin: 10px;
   font-size: 22px;
   text-align: center;
-  color: #464646;
+  color: #333333;
 }
 
 .mainNosotros p {
   margin-bottom: 20px;
-  color: #666;
+  color: #333333;
 }
 
 .team-member {
@@ -121,18 +106,18 @@ header {
   margin: 0;
   font-weight: bold;
   font-style: italic;
-  color: #464646;
+  color: #333333;
 }
 
 .team-member p {
   margin: 0;
-  color: #666;
+  color: #333333;
 }
 
 
 .slider h2 {
   margin-left: 45%;
-  color: #464646;
+  color: #C1A875;
   visibility: visible;
   overflow: visible;
 }
@@ -189,7 +174,7 @@ header {
 .slider cite {
   font-style: italic;
   text-align: right;
-  color: #666;
+  color: #333333;
 }
 
 .slider::before,
@@ -244,7 +229,7 @@ header {
   margin: 10px auto;
   line-height: 28px;
   font-size: 14px;
-  color: #333;
+  color: #333333;
 }
 
 .social {
@@ -348,7 +333,7 @@ header {
   .hamburger .line {
     width: 30px;
     height: 3px;
-    background: #005672;
+    background: #333333;
     margin: 6px 0;
   }
 
@@ -359,7 +344,7 @@ header {
     left: 0;
     right: 0;
     width: 100vw;
-    background: #2896b4;
+    background: #A9CBB7;
     transition: 0.5s ease;
     overflow: hidden;
   }

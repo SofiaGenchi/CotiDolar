@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="img/favicon2.ico">
   <link rel="stylesheet" href="nosotros.css">
-  <link rel="stylesheet" href="css/Index.css">
+  <link rel="stylesheet" href="../CotiDolar/src/App.css">
   <script src="https://kit.fontawesome.com/c9d35f43b1.js" crossorigin="anonymous"></script>
   <title>Nosotros</title>
 </head>
@@ -159,19 +159,19 @@
 
           console.log(data)
           contenido.innerHTML = `<div class="team-member">        
-        <img src="${data.results[0].image}" alt="Marcelo Gallardo" class="img"> <h3>${data.results[0].name}</h3>
-        <p>Editor en Jefe </p>
+        <img src="${data.results[0].image}" alt="Rick CEO" class="img"> <h3>${data.results[0].name}</h3>
+        <p>CEO y Dueño </p>
       </div>
-        <img src="${data.results[1].image}" alt="Marcelo Gallardo" class="img"> <h3>${data.results[1].name}</h3>
-        <p>Periodista</p>
+        <img src="${data.results[1].image}" alt="Morty Dev BackEnd" class="img"> <h3>${data.results[1].name}</h3>
+        <p>Dev BackEnd</p>
         </d iv>
         <div class="team-member">
-          <img src="${data.results[2].image}" alt="Marcelo Gallardo" class="img"> <h3>${data.results[2].name}</h3>
-          <p>Diseñadora</p>
+          <img src="${data.results[2].image}" alt="Summer UX/UI" class="img"> <h3>${data.results[2].name}</h3>
+          <p>Diseñadora UX/UI</p>
         </div>
         <div class="team-member">
-          <img src="${data.results[3].image}" alt="Marcelo Gallardo" class="img"> <h3>${data.results[3].name}</h3>
-          <p>Fotógrafa</p>
+          <img src="${data.results[3].image}" alt="Beth Dev FrontEnd" class="img"> <h3>${data.results[3].name}</h3>
+          <p>Dev FrontEnd</p>
         </div> `
         })
         .catch(error => console.log("Ocurrió un error", error)) // si hay un error será atrapado por catch
